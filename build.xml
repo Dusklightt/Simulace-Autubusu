@@ -1,0 +1,41 @@
+<project>
+    <target name="clean">
+        <delete dir="build"/>
+    </target>
+
+    <target name="doc">
+        <javadoc packagenames="ija.ija2019.projekt.*"
+         sourcepath="src"
+         excludepackagenames="ija.ija2019.projekt.doc-files.*"
+         defaultexcludes="yes"
+         destdir="doc"
+         author="true"
+         version="true"
+         use="true"
+         windowtitle="IJA projekt">
+ 	<doctitle><![CDATA[<h1>Projekt</h1>]]></doctitle>
+  	<bottom><![CDATA[<i>xvasut02 xstafl01.</i>]]></bottom>
+  	<group title="My Maps" packages="ija.ija2019.projekt.myMaps*"/>
+        <group title="Maps" packages="ija.ija2019.projekt.maps*"/> </javadoc>
+    </target>
+
+
+    <target name="compile">
+        <mkdir dir="build/classes"/>
+        <javac srcdir="src" destdir="build/classes"/>
+    </target>
+
+    <target name="jar">
+        <mkdir dir="build"/>
+        <jar destfile="build/Main.jar" basedir="build/classes">
+            <manifest>
+                <attribute name="Main-Class" value="ija.ija2019.projekt.Main"/>
+            </manifest>
+        </jar>
+    </target>
+
+    <target name="run">
+        <java jar="build/Main.jar" fork="true"/>
+    </target>
+
+</project>

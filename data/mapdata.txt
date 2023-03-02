@@ -1,0 +1,112 @@
+ulice Ulice1
+0,0 0,100
+ulice Ulice2
+0,100 100,100
+ulice Ulice3
+100,100 150,100
+ulice Ulice4
+150,100 200,100
+ulice Ulice5
+200,100 300,100 300,260
+ulice Ulice6
+300,260 300,400
+ulice Ulice7
+50,400 150,400
+ulice Ulice8
+200,400 250,400
+ulice Ulice9
+250,400 300,400
+ulice Ulice10
+300,400 400,400
+ulice Ulice11
+400,400 450,400
+ulice Ulice12
+200,260 250,260
+ulice Ulice13
+250,260 300,260
+ulice Ulice14
+300,260 370,260 370,100
+ulice Ulice15
+200,260 200,150 150,150 150,100
+ulice Ulice16
+150,100 150,0
+ulice Ulice17
+150,0 200,0
+ulice Ulice18
+200,0 370,0 370,100
+ulice Ulice19
+200,100 200,0
+ulice Ulice20
+50,300 150,300 150,400
+ulice Ulice21
+450,400 450,200 450,100 370,100
+ulice Ulice22
+150,400 200,400
+ulice Ulice23
+50,400 0,400 0,300
+ulice Ulice24
+0,300 50,300
+ulice Ulice25
+0,300 0,100
+ulice Ulice26
+250,400 250,260
+ulice Ulice27
+400,400 400,500
+ulice Ulice28
+400,500 400,600 350,600
+ulice Ulice29
+350,600 300,600
+ulice Ulice30
+300,600 250,600
+ulice Ulice31
+250,600 200,600 200,550
+ulice Ulice32
+200,550 200,500
+ulice Ulice33
+200,500 200,450
+ulice Ulice34
+200,450 200,400
+ulice Ulice35
+200,500 250,500 250,600
+ulice Ulice36
+400,500 350,500 350,600
+ulice Ulice37
+300,600 300,450 200,450
+ulice Ulice38
+200,550 100,550
+ulice Ulice39
+100,550 50,550 50,400
+ulice Ulice40
+100,550 100,800
+
+stop Stop1 0,10 Ulice1
+stop Stop2 110,100 Ulice3
+stop Stop8 250,100 Ulice5
+stop Stop16 100,400 Ulice7
+stop Stop3 420,400 Ulice11
+stop Stop4 350,260 Ulice14
+stop Stop6 370,150 Ulice14
+stop Stop5 200,250 Ulice15
+stop Stop9 170,150 Ulice15
+stop Stop7 370,50 Ulice18
+stop Stop10 450,300 Ulice21
+stop Stop11 450,150 Ulice21
+stop Stop21 400,450 Ulice27
+stop Stop19 320,600 Ulice29
+stop Stop17 200,420 Ulice34
+stop Stop20 350,550 Ulice36
+stop Stop18 250,450 Ulice37
+stop Stop14 150,550 Ulice38
+stop Stop12 50,500 Ulice39
+stop Stop15 50,450 Ulice39
+stop Stop13 100,700 Ulice40
+
+linka Linka1
+Ulice1 Ulice2 Ulice3 Ulice15 Ulice12 Ulice13 Ulice14 Ulice21 Ulice11 Ulice27
+Stop1 null Stop2 Stop9,Stop5 null null Stop4,Stop6 Stop11,Stop10 Stop3 Stop21
+linka Linka2
+Ulice1 Ulice2 Ulice3 Ulice15 Ulice12 Ulice26 Ulice9 Ulice10 Ulice27 Ulice36 Ulice29 Ulice30 Ulice31 Ulice32 Ulice33 Ulice34 Ulice22 Ulice7 Ulice23 Ulice25 Ulice1
+Stop1 null Stop2 Stop9,Stop5 null null null null Stop21 Stop20 Stop19 null null null null Stop17 null Stop16 null null Stop1
+linka Linka3
+Ulice1 Ulice2 Ulice3 Ulice16 Ulice17 Ulice18 Ulice14 Ulice6 Ulice9 Ulice8 Ulice34 Ulice37 Ulice30 Ulice31 Ulice38 Ulice39 Ulice23 Ulice25 Ulice1
+Stop1 null Stop2 null null Stop7 Stop6,Stop4 null null null Stop17 Stop18 null null Stop14 Stop12,Stop15 null null Stop1
